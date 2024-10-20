@@ -12,3 +12,8 @@ class Event(models.Model):
 
   def __str__(self):
     return self.title
+
+def save(self, *args, **kwargs):
+  if self.capacity <= 0:
+    raise ValueError('Capacity must be greater than 0')
+  super().save(*args, **kwargs)
