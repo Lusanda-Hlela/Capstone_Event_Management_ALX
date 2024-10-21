@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-to)u%1p%@!lcw0!$6^!-@ydsoi0mdq34ikmdbc6!q0pa(n$20x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['EventsManager.pythonanywhere.com']
 
 
 # Application definition
@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'event_management_api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'event_management_db',
-        'USER': 'root',
+        'NAME': 'EventsManager$default',
+        'USER': 'EventsManager',
         'PASSWORD': 'Man8244251',
-        'HOST': 'localhost',
+        'HOST': 'EventsManager.mysql.pythonanywhere-services.com',
         'PORT': '3306',
     }
 }
